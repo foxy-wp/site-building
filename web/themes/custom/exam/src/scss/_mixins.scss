@@ -1,0 +1,9 @@
+@mixin line ($widthline, $heightH, $bg-color, $Ptop, $Pleft){
+  content: "";
+  width: $widthline;
+  height: $heightH;
+  background-color: $bg-color;
+  position: absolute;
+  top:$Ptop;
+  left:$Pleft;
+}

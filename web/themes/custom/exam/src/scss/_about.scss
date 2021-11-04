@@ -1,0 +1,69 @@
+
+
+
+.view-display-id-block_1 {
+  margin-top: 96px;
+
+  .view-content {
+    .views-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+
+      //ABOUT & line before
+      .views-field-title {
+        margin-right: 15px;
+
+        a {
+          color: #373645;
+          font-size: 32px;
+          font-weight: 800;
+          letter-spacing: -2.3px;
+          text-decoration: none;
+        }
+
+        &::before{
+          @include line (100%, 6px, #373645, -13px, 0);
+        }
+        &::after{
+          @include line (100%, 6px, #6e9bca, 54px, 0);
+        }
+      }
+
+      //THE STANDARD CHUNK...
+      .views-field-field-about-main {
+        .field-content {
+          color: #cccccc;
+          font-size: 18px;
+          white-space: nowrap;
+          letter-spacing: 1.1px;
+        }
+      }
+
+      //BTN
+      .views-field-view-node{
+        .field-content{
+          a{
+            color:white;
+            background-color: #6e9bca;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 0;
+            padding: 5px;
+            line-height: 1em;
+          }
+        }
+      }
+
+
+
+    }
+  }
+
+
+}
+
+
+
