@@ -1,43 +1,16 @@
 @import "variables";
 @import "mixins";
 @import "../../bootstrap/assets/stylesheets/bootstrap";
+@import "for-all-page";
 @import "main-navigation";
 @import "about";
 @import "services";
-
-.container-fluid{
-  padding: 0;
-}
+@import "projects";
 
 
 
-.block-title {
-  text-align: center;
-  margin: 0;
-  padding: 10px;
-  font-weight: 800;
-  line-height: 1;
-  font-size: 28px;
-  position: relative;
-  text-transform: uppercase;
 
-  &::before {
-    @include line(43%, 2px, #cccccc, 50%, 0);
-  }
 
-  &::after {
-    @include line(43%, 2px, #cccccc, 50%, 57%);
-  }
-}
-
-.block-views-blockprojects-block-1{
-    background: repeating-linear-gradient(-45deg, transparent 0 8px, #cccccc 9px 10px);
-
-}
-
-.block-views-blockour-team-view-block-1{
-
-}
 
 .block-views-blocknews-block-1{
   background: repeating-linear-gradient(-45deg, transparent 0 8px, #cccccc 9px 10px);

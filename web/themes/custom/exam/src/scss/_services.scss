@@ -1,6 +1,5 @@
 .block-views-blockservices-block-1 {
-  margin-top: 86px;
-
+  margin-block: 86px;
 
 
   .view-display-id-block_1 {
@@ -11,19 +10,25 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-inline:15px;
 
       //image
       .views-field-field-image-services {
+
       }
 
       .views-field-field-tax-services {
         padding-top: 40px;
-
         a {
           font-size: 22px;
           line-height: 1;
           color: #373645;
+
+          &:hover {
+            text-decoration: none;
+          }
         }
+
       }
 
       .views-field-field-text-services {
@@ -31,11 +36,15 @@
         line-height: 1;
         color: #cccccc;
         text-align: center;
+        margin-top:15px;
       }
 
       //btn
       .views-field-view-node {
+        padding-top:20px;
         a {
+          padding-inline: 6px;
+          padding-block:8px;
         }
       }
 

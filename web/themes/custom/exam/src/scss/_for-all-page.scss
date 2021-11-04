@@ -1,0 +1,24 @@
+.container-fluid{
+  padding: 0;
+}
+
+
+
+.block-title {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-weight: 800;
+  line-height: 1;
+  font-size: 28px;
+  position: relative;
+  text-transform: uppercase;
+
+  &::before {
+    @include line(43%, 2px, #cccccc, 50%, 0);
+  }
+
+  &::after {
+    @include line(43%, 2px, #cccccc, 50%, 57%);
+  }
+}

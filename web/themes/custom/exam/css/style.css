@@ -6704,6 +6704,41 @@ button.close {
   display: none !important;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
+.block-title {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-weight: 800;
+  line-height: 1;
+  font-size: 28px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.block-title::before {
+  content: "";
+  width: 43%;
+  height: 2px;
+  background-color: #cccccc;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.block-title::after {
+  content: "";
+  width: 43%;
+  height: 2px;
+  background-color: #cccccc;
+  position: absolute;
+  top: 50%;
+  left: 57%;
+}
+
 .header {
   background-image: url("../images/header.png");
   background-repeat: no-repeat;
@@ -6971,7 +7006,7 @@ button.close {
 }
 
 .block-views-blockservices-block-1 {
-  margin-top: 86px;
+  margin-block: 86px;
 }
 
 .block-views-blockservices-block-1 .view-display-id-block_1 {
@@ -6989,6 +7024,7 @@ button.close {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-inline: 15px;
 }
 
 .block-views-blockservices-block-1 .view-display-id-block_1 .views-col .views-field-field-tax-services {
@@ -7001,51 +7037,103 @@ button.close {
   color: #373645;
 }
 
+.block-views-blockservices-block-1 .view-display-id-block_1 .views-col .views-field-field-tax-services a:hover {
+  text-decoration: none;
+}
+
 .block-views-blockservices-block-1 .view-display-id-block_1 .views-col .views-field-field-text-services {
   font-size: 12px;
   line-height: 1;
   color: #cccccc;
   text-align: center;
+  margin-top: 15px;
 }
 
-.container-fluid {
-  padding: 0;
+.block-views-blockservices-block-1 .view-display-id-block_1 .views-col .views-field-view-node {
+  padding-top: 20px;
 }
 
-.block-title {
-  text-align: center;
-  margin: 0;
-  padding: 10px;
-  font-weight: 800;
-  line-height: 1;
-  font-size: 28px;
-  position: relative;
-  text-transform: uppercase;
-}
-
-.block-title::before {
-  content: "";
-  width: 43%;
-  height: 2px;
-  background-color: #cccccc;
-  position: absolute;
-  top: 50%;
-  left: 0;
-}
-
-.block-title::after {
-  content: "";
-  width: 43%;
-  height: 2px;
-  background-color: #cccccc;
-  position: absolute;
-  top: 50%;
-  left: 57%;
+.block-views-blockservices-block-1 .view-display-id-block_1 .views-col .views-field-view-node a {
+  padding-inline: 6px;
+  padding-block: 8px;
 }
 
 .block-views-blockprojects-block-1 {
   background: -o-repeating-linear-gradient(135deg, transparent 0 8px, #cccccc 9px 10px);
   background: repeating-linear-gradient(-45deg, transparent 0 8px, #cccccc 9px 10px);
+}
+
+.block-views-blockprojects-block-1 .view-display-id-block_1 {
+  margin-top: 80px;
+}
+
+.block-views-blockprojects-block-1 .views-view-grid .views-col {
+  padding-right: 29px;
+}
+
+.block-views-blockprojects-block-1 .views-view-grid .views-col .views-field-field-screenshot-project img {
+  width: 290px;
+  height: 290px;
+}
+
+.block-views-blockprojects-block-1 .views-view-grid .views-col .views-field-field-project-name-title {
+  background-color: #FFFFFF;
+  font-size: 24px;
+  line-height: 1;
+  color: #373645;
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 8px;
+}
+
+.block-views-blockprojects-block-1 .views-view-grid .views-col .views-field-field-project-tax {
+  background-color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.block-views-blockprojects-block-1 .views-view-grid .views-col .views-field-view-node {
+  background-color: #FFFFFF;
+}
+
+.block-views-blockprojects-block-1 .views-view-grid .views-col .views-field-view-node .field-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 16px;
+  padding-top: 20px;
+  border-bottom: 1px solid #373645;
+}
+
+.block-views-blockprojects-block-1 .views-view-grid .views-col .views-field-view-node .field-content a {
+  color: white;
+  background-color: #373645;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.block-views-blockprojects-block-1 .views-view-grid .col-1 .views-field-field-project-tax a {
+  color: #1bbc9b;
+}
+
+.block-views-blockprojects-block-1 .views-view-grid .col-2 .views-field-field-project-tax a {
+  color: #9e5db7;
+}
+
+.block-views-blockprojects-block-1 .views-view-grid .col-3 .views-field-field-project-tax a {
+  color: #e84c3d;
+}
+
+.block-views-blockprojects-block-1 .views-view-grid .col-4 {
+  margin-right: -30px;
+}
+
+.block-views-blockprojects-block-1 .views-view-grid .col-4 .views-field-field-project-tax a {
+  color: #28a9e0;
 }
 
 .block-views-blocknews-block-1 {
