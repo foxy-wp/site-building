@@ -1,91 +1,129 @@
 .block-views-blockprojects-block-1 {
 
   background: repeating-linear-gradient(-45deg, transparent 0 8px, #cccccc 9px 10px);
+  padding-bottom: 90px;
 
   .view-display-id-block_1 {
     margin-top: 80px;
-  }
 
-  .views-view-grid {
-    .views-col {
-      padding-right: 29px;
-      .views-field-field-screenshot-project {
-        img {
-          width: 290px;
-          height: 290px;
+
+    .views-view-grid {
+      .views-col {
+        padding-right: 29px;
+
+        .views-field-field-screenshot-project {
+          img {
+            width: 290px;
+            height: 290px;
+          }
         }
-      }
 
-      .views-field-field-project-name-title {
-        background-color: #FFFFFF;
-        font-size: 24px;
-        line-height: 1;
-        color: #373645;
-        text-align: center;
-        padding-top:36px;
-        padding-bottom: 8px;
-      }
+        .views-field-field-project-name-title {
+          background-color: #FFFFFF;
+          font-size: 24px;
+          line-height: 1;
+          color: #373645;
+          text-align: center;
+          padding-top: 36px;
+          padding-bottom: 8px;
+        }
 
-      .views-field-field-project-tax {
-        background-color: #FFFFFF;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
-      }
-//btn
-      .views-field-view-node {
-        background-color: #FFFFFF;
-        .field-content{
-          display: flex;
-          justify-content: center;
-          padding-bottom: 16px;
-          padding-top:20px;
-          border-bottom: 1px solid #373645;
-          a{
-            color: white;
-            background-color: #373645;
-            padding: 8px;
-            text-decoration: none;
+        .views-field-field-project-tax {
+          background-color: #FFFFFF;
+          text-align: center;
+          text-decoration: none;
+          font-size: 16px;
+        }
+
+        //btn
+        .views-field-view-node {
+          background-color: #FFFFFF;
+
+          .field-content {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 16px;
+            padding-top: 20px;
+            border-bottom: 1px solid #373645;
+
+            a {
+              color: white;
+              background-color: #373645;
+              padding: 8px;
+              text-decoration: none;
+            }
           }
         }
       }
-    }
 
-    .col-1 {
-      .views-field-field-project-tax {
-        a {
-          color: #1bbc9b;
-        }
-      }
-    }
-
-    .col-2 {
-      .views-field-field-project-tax {
-        a {
-          color: #9e5db7;
+      .col-1 {
+        .views-field-field-project-tax {
+          a {
+            color: #1bbc9b;
+          }
         }
       }
 
-    }
+      .col-2 {
+        .views-field-field-project-tax {
+          a {
+            color: #9e5db7;
+          }
+        }
 
-    .col-3 {
-      .views-field-field-project-tax {
-        a {
-          color: #e84c3d;
+      }
+
+      .col-3 {
+        .views-field-field-project-tax {
+          a {
+            color: #e84c3d;
+          }
         }
       }
-    }
 
-    .col-4 {
-      margin-right:-30px;
-      .views-field-field-project-tax {
+      .col-4 {
+        margin-right: -30px;
 
-        a {
-          color: #28a9e0;
+        .views-field-field-project-tax {
+
+          a {
+            color: #28a9e0;
+          }
         }
       }
+
+
     }
 
+    //pager
+    .pager-nav {
+      //ul
+      .pagination.js-pager__items {
+        margin-block: 40px;
+        //li
+        .pager__item {
+          margin-inline: 10px;
+
+          &.is-active.active {
+            a {
+              border-radius: 50%;
+              background: #dddcdd;
+              border: none;
+              font-weight: 800;
+            }
+          }
+
+          a {
+            border: none;
+            color: #333333;
+            background: none;
+            font-size: 16px;
+          }
+
+        }
+
+      }
+    }
   }
 }
 

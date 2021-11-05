@@ -1,0 +1,63 @@
+.block-views-blockour-team-view-block-1 {
+  padding-top: 26px;
+
+  .views-row {
+    .views-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      text-align: center;
+
+      //items
+      .views-field-field-name-sername {
+        color: #000;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-top: 10%;
+
+      }
+
+      .views-field-field-job-position-tax {
+        a {
+          color: #B9B9B9;
+          text-transform: uppercase;
+          font-size: 1em;
+          line-height: 0.5em;
+        }
+
+      }
+
+      .views-field-view-node {
+        margin-block:15px;
+        .field-content {
+
+          a {
+            border: none;
+            color: #FFF;
+            cursor: pointer;
+            padding: 5px 10px;
+            font-size: 1em;
+            outline: none;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            background: #373645;
+            text-decoration: none;
+          }
+        }
+
+      }
+      .link-heard{
+        display: flex;
+        gap:60px;
+      }
+    }
+  }
+}
+
+
+
+

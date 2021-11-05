@@ -27,10 +27,12 @@
         "drupal/panels": "^4.6",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
+        "drupal/redirect": "^1.6",
         "drupal/search_api": "^1.20",
         "drupal/slick": "^2.4",
         "drupal/slick_views": "^2.5",
         "drupal/social_media_links": "^2.8",
+        "drupal/views_fieldsets": "^3.4",
         "drupal/webform": "^6.0",
         "drush/drush": "^10.2"
     },

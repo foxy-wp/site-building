@@ -1,0 +1,77 @@
+.block-views-blocknews-block-1{
+  background: repeating-linear-gradient(-45deg, transparent 0 8px, #cccccc 9px 10px);
+
+  .views-row{
+    gap:15px;
+    .views-col{
+      display: grid;
+      grid-template-areas:
+    'time image writer news job ago'
+    'time title title title title title'
+    'time text text text text text'
+    'time btn btn btn btn btn' ;
+      grid-gap: 5px;
+      background-color: #FFFFFF;
+      padding: 5px;
+
+      .views-field-fieldset{
+        grid-area: time;
+        .views-field-created{
+            .field-content{
+    color: #373645;
+    font-size: 26px;
+  }
+
+}
+        .views-field-created-2{
+          color: #6e9bca;
+          font-size: 50px;
+          font-weight: 800;
+        }
+        .views-field-created-3{
+          color: #cccccc;
+          font-size: 16px;
+        }
+      }
+      .views-field-field-writer{grid-area: writer;
+        color: #cccccc;}
+      .views-field-new-comments{grid-area: comments;}
+      .views-field-field-name-news{grid-area: news;}
+      .views-field-field-job-position-new-{grid-area: job;}
+      .views-field-created-1{grid-area: ago;
+        color: #cccccc;
+      margin-left: auto;}
+      .views-field-field-title-news{
+        grid-area: title;
+        text-transform: uppercase;
+        font-size: 21px;
+        line-height: 1;
+        margin-bottom: 20px;
+      }
+      .views-field-field-text-news{
+        grid-area: text;
+        font-size: 14px;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+      .views-field-field-image-news{grid-area: image;
+      .img-responsive{
+        max-width: unset;
+      }
+      }
+      //btn
+      .views-field-view-node{grid-area: btn;
+        .field-content{
+          .btn-default{
+            color: white;
+            background-color: #373645;
+            padding: 10px;
+            text-decoration: none;
+          }
+        }
+
+      }
+    }
+  }
+
+}

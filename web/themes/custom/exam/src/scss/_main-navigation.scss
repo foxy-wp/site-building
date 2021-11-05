@@ -17,14 +17,23 @@
       margin-right: 30px;
       margin-left: 30px;
 
-      .block-social-media-links-block{
-        .container{
-          width:30px;
+      .navbar-collapse {
+        display: none !important;
+      }
+
+      .contextual-region {
+        margin-left: 2.4%;
+      }
+
+      .block-social-media-links-block {
+        margin-left: 15px;
+
+        .container {
+          width: auto;
         }
       }
 
       & .social-media-links--platforms {
-        order: 3;
         display: flex;
         gap: 10px;
         margin-top: 10px;
@@ -47,36 +56,38 @@
         }
       }
 
-      .block-views-exposed-filter-blocksearch-page-page-1{
-        .container{
-          width:30px;
-        }
-      }
+      .block-views-exposed-filter-blocksearch-page-page-1 {
+        margin: 0;
 
-      .views-exposed-form {
-        .form-inline {
-          margin-left: 25px;
+        .container {
+          width: auto;
+          padding: 0;
 
+          #views-exposed-form-search-page-page-1 {
+            .form-inline {
+              display: flex;
 
-          .form-text {
-            color: #202020;
-            background: none;
-            border: 1px solid #DBDBDB;
-            border-radius: 0;
+              .form-text {
+                color: #202020;
+                background: none;
+                border: 1px solid #DBDBDB;
+                border-radius: 0;
+              }
+
+              .form-submit {
+                border-radius: 0;
+                background: url(../images/search.png) no-repeat 4px 5px;
+                cursor: pointer;
+                border: 1px solid #DBDBDB;
+                color: rgba(201, 76, 76, 0);
+                padding-inline: 0;
+
+              }
             }
-
-          .form-submit {
-            border-radius: 0;
-            background: url(../images/search.png) no-repeat 4px 5px;
-            cursor: pointer;
-            border: 1px solid #DBDBDB;
-            color: rgba(201, 76, 76, 0);
-            padding-inline: 0;
-
           }
+
         }
       }
-
 
     }
 
@@ -130,7 +141,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      order: -2;
       background: #373645;
       padding-inline: 11px;
 
@@ -150,19 +160,7 @@
 
     }
 
-    &-collapse {
-      order: -1;
 
-    }
-
-    #block-socialmedialinks {
-      order: 3;
-    }
-
-  }
-
-  .form-inline {
-    order: 4;
   }
 
 
