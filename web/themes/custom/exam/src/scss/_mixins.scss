@@ -1,9 +1,18 @@
-@mixin line ($widthline, $heightH, $bg-color, $Ptop, $Pleft){
+@mixin line($widthline, $heightH, $bg-color, $Ptop, $Pleft) {
   content: "";
   width: $widthline;
   height: $heightH;
   background-color: $bg-color;
   position: absolute;
-  top:$Ptop;
-  left:$Pleft;
+  top: $Ptop;
+  left: $Pleft;
 }
+
+@mixin input($height-webform) {
+  width: 100%;
+  border-radius: 0;
+  height: $height-webform;
+}
+
+
+

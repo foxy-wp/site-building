@@ -4,19 +4,12 @@
   padding-bottom: 90px;
 
   .view-display-id-block_1 {
-    margin-top: 80px;
+    margin-top: 25px;
 
 
     .views-view-grid {
       .views-col {
         padding-right: 29px;
-
-        .views-field-field-screenshot-project {
-          img {
-            width: 290px;
-            height: 290px;
-          }
-        }
 
         .views-field-field-project-name-title {
           background-color: #FFFFFF;
@@ -33,6 +26,27 @@
           text-align: center;
           text-decoration: none;
           font-size: 16px;
+
+          a{
+            font-size: 15px;
+            text-transform: uppercase;
+            &:hover{
+              text-decoration: none;
+              font-weight: bold;
+            }
+            &[href$="/taxonomy/term/1"]{
+              color: #1bbc9b;
+            }
+            &[href$="/taxonomy/term/3"]{
+              color: #9e5db7;
+            }
+            &[href$="/taxonomy/term/2"]{
+              color: #e84c3d;
+            }
+            &[href$="/taxonomy/term/5"]{
+              color: #28a9e0;
+            }
+          }
         }
 
         //btn
@@ -55,43 +69,6 @@
           }
         }
       }
-
-      .col-1 {
-        .views-field-field-project-tax {
-          a {
-            color: #1bbc9b;
-          }
-        }
-      }
-
-      .col-2 {
-        .views-field-field-project-tax {
-          a {
-            color: #9e5db7;
-          }
-        }
-
-      }
-
-      .col-3 {
-        .views-field-field-project-tax {
-          a {
-            color: #e84c3d;
-          }
-        }
-      }
-
-      .col-4 {
-        margin-right: -30px;
-
-        .views-field-field-project-tax {
-
-          a {
-            color: #28a9e0;
-          }
-        }
-      }
-
 
     }
 

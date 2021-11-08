@@ -5,32 +5,104 @@
   background-position: center center;
   background-size: cover;
   padding: 0;
+  margin-bottom: 0;
+
+  @media (min-width: 1200px) {
+    .container {
+      width: 1100px;
+    }
+  }
+  @media (min-width: 1350px) {
+    .container {
+      width: 1280px;
+    }
+  }
+  @media (max-width: 1349px) {
+    #block-mainnavigation {
+      display: none;
+    }
+  }
+
 
   & .navbar {
 
+
+    // logo + menu + social + search
     &-header {
       float: unset;
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       background-color: #ffffff;
       margin-top: 39px;
       margin-right: 30px;
       margin-left: 30px;
 
-      .navbar-collapse {
-        display: none !important;
+      @media (max-width: 1349px) {
+        & {
+          max-width: 900px;
+          margin-inline: auto;
+        }
       }
+
+      @media (max-width: 1349px) {
+        & {
+          justify-content: space-around
+        }
+      }
+
+
+      &::before {
+        @include line(21%, 6px, #6e9bca, 100%, 19%);
+        z-index: 6;
+      }
+
+      &::after {
+        @include line(41%, 6px, #cccccc, 100%, 39.8%);
+        z-index: 8;
+      }
+
+      .navbar-toggle{
+        @media (min-width: 615px){
+          display: none;
+        }
+      }
+
+
+      .collapse {
+        display: none;
+        @media (max-width: 1349px) {
+          & {
+            display: block;
+          }
+        }
+        @media (max-width: 615px) {
+          display: none;
+         }
+
+      }
+      .collapse.in {
+        display: block;
+      }
+
 
       .contextual-region {
         margin-left: 2.4%;
       }
+
+      //SOCIAL MEDIA LINKS
 
       .block-social-media-links-block {
         margin-left: 15px;
 
         .container {
           width: auto;
-        }
+          @media (min-width: 615px) {
+            padding: 0;
+          }
+
+          }
+       
       }
 
       & .social-media-links--platforms {
@@ -56,8 +128,15 @@
         }
       }
 
+      // SEARCh
+
       .block-views-exposed-filter-blocksearch-page-page-1 {
         margin: 0;
+        @media (max-width: 767px) {
+          & {
+            padding-top: 15px;
+          }
+        }
 
         .container {
           width: auto;
@@ -72,7 +151,9 @@
                 background: none;
                 border: 1px solid #DBDBDB;
                 border-radius: 0;
+                max-width: 180px;
               }
+
 
               .form-submit {
                 border-radius: 0;
@@ -91,18 +172,23 @@
 
     }
 
+    //NAVIGATION
     &-nav {
       display: flex;
       padding-top: 6px;
 
       li:first-child {
         margin-right: 20px;
+
       }
 
       li {
 
         a {
           padding-inline: 10px;
+          @media (min-width: 615px){
+            padding-inline: 5px;
+          }
         }
       }
 
@@ -122,7 +208,20 @@
           position: absolute;
           top: 88px;
           left: 0;
+
         }
+
+        @media (max-width: 1349px) {
+          a::after {
+            top: 80px;
+          }
+        }
+        @media (max-width: 767px){
+          a::after {
+            top: 55px;
+          }
+        }
+
       }
 
       .first {
@@ -147,7 +246,7 @@
       .navbar-brand {
         color: #6990bc;
         font-size: 36px;
-        font-family: Arial, Serif;
+        font-family: Serif;
         margin-left: 0 !important;
       }
 
@@ -166,7 +265,8 @@
 
   .field--type-text-with-summary {
     display: block;
-    padding: 130px 750px 268px 86px;
+    padding: 130px 0 268px 86px;
+    position: relative;
 
     h1 {
       color: #FFF;
@@ -196,11 +296,23 @@
       padding-left: 7px;
     }
 
+    i {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background-color: #373644;
+      bottom: -6px;
+      left: 30.5%;
+      z-index: 20;
+
+    }
+
 
   }
 
 
 }
+
 
 
 

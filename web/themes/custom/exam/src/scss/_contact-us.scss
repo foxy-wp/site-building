@@ -1,0 +1,102 @@
+$height-webform: 50px;
+
+.block-block-contenteb1c3050-706c-42d3-ae45-f64ca76f5eaa {
+
+
+  .block-title {
+    &::before {
+      @include line(10%, 6px, #cccccc, 95%, 45%);
+    }
+
+    &::after {
+      @include line(10%, 6px, #cccccc, 95%, 45%);
+    }
+  }
+
+  .field--name-field-contact-us-title {
+    display: none;
+  }
+
+  //hide title
+  .field--type-webform {
+    .field--label {
+      display: none;
+    }
+  }
+
+  //WEBFORM
+
+  .webform-submission-contact-us-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 45px;
+
+    .form-item-name {
+      input {
+        @include input($height-webform);
+      }
+    }
+
+    .form-item-email {
+      input {
+        @include input($height-webform);
+      }
+    }
+
+
+    .form-type-tel {
+      input {
+        @include input($height-webform);
+      }
+    }
+
+    .form-actions {
+      .webform-button--submit {
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        background-color: #e84c3d;
+        height: 60px;
+        width: 190px;
+        font-size: 18px;
+
+      }
+    }
+
+    .form-textarea-wrapper {
+      textarea {
+        min-height: 250px;
+      }
+    }
+  }
+
+  #edit-address-container {
+    .form-item-title-address {
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 22px;
+      margin-bottom: 0;
+    }
+
+
+    .form-type-processed-text {
+      font-size: 16px;
+      line-height: 1.4;
+      color: #333333;
+
+      p {
+        margin-bottom: 3px;
+
+        iframe {
+          width: 200%;
+          height: 300px;
+        }
+      }
+    }
+
+  }
+
+
+}
