@@ -6704,6 +6704,10 @@ button.close {
   display: none !important;
 }
 
+html body {
+  height: 100%;
+}
+
 .container-fluid {
   padding: 0;
 }
