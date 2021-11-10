@@ -82,6 +82,7 @@
 
       .collapse {
         display: none;
+        height: auto;
         @media (max-width: 1349px) {
           & {
             display: block;
@@ -94,8 +95,10 @@
       }
 
       //COLLAPSE BUTTON IN!!!!!!
-      .collapsing{
-
+      .collapsing {
+        margin: 0;
+        padding: 0;
+        display: none;
       }
 
       .collapse.in {

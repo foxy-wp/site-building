@@ -6802,6 +6802,13 @@ body {
 
 .header .navbar-header .collapse {
   display: none;
+  height: auto;
+}
+
+.header .navbar-header .collapsing {
+  margin: 0;
+  padding: 0;
+  display: none;
 }
 
 .header .navbar-header .collapse.in {
@@ -7685,12 +7692,6 @@ body {
 .block-block-contenteb1c3050-706c-42d3-ae45-f64ca76f5eaa #edit-address-container .form-type-processed-text p iframe {
   width: 200%;
   height: 300px;
-}
-
-@media (min-width: 480px) {
-  .container {
-    padding-right: 0;
-  }
 }
 
 @media (min-width: 615px) {
