@@ -6704,8 +6704,18 @@ button.close {
   display: none !important;
 }
 
-html body {
+html,
+body {
   height: 100%;
+}
+
+.dialog-off-canvas-main-canvas {
+  position: relative;
+  min-height: 100%;
+}
+
+.dialog-off-canvas-main-canvas .js-quickedit-main-content {
+  padding-bottom: 115px;
 }
 
 .container-fluid {
