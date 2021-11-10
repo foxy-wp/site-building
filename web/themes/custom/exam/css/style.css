@@ -9141,6 +9141,12 @@ body {
   }
 }
 
+@media (max-width: 628px) {
+  .header .container {
+    padding: 0;
+  }
+}
+
 @media (max-width: 615px) {
   .header .navbar-header {
     -webkit-box-pack: justify;
@@ -9194,10 +9200,6 @@ body {
 }
 
 @media (max-width: 585px) {
-  .header .container {
-    padding: 0;
-  }
-
   .header .navbar-header .navbar-toggle {
     margin: 0 0 8px 0;
   }
