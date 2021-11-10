@@ -110,6 +110,10 @@
             }
 
             .first {
+              @media (max-width: 615px) {
+                margin-right: 0;
+              }
+
               a {
                 width: auto;
               }

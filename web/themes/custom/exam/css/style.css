@@ -9115,6 +9115,10 @@ button.close {
     display: none;
   }
 
+  .header .navbar-header .collapse.in .region-navigation-collapsible .navbar-nav .first {
+    margin-right: 0;
+  }
+
   .header .navbar-header .block-social-media-links-block .container {
     padding: 0;
   }
