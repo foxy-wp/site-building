@@ -2,6 +2,8 @@
   padding-top: 26px;
 
   .views-row {
+    flex-wrap: wrap;
+
     .views-col {
       display: flex;
       flex-direction: column;
@@ -9,7 +11,29 @@
       margin: 0 auto;
       text-align: center;
 
+
+      @media (max-width: 1350px) {
+        width: 50% !important;
+        margin-bottom: 30px;
+      }
+      @media (max-width: 490px) {
+        width: 95% !important;
+        margin-bottom: 50px;
+      }
+
       //items
+      .views-field-field-team-img {
+        @media (max-width: 600px) {
+          width: 75%;
+          margin: 0 auto;
+          img {
+            margin: 0 auto;
+          }
+
+        }
+      }
+
+
       .views-field-field-name-sername {
         color: #000;
         font-size: 24px;
@@ -30,7 +54,8 @@
       }
 
       .views-field-view-node {
-        margin-block:15px;
+        margin-block: 15px;
+
         .field-content {
 
           a {
@@ -50,32 +75,53 @@
         }
 
       }
-      .link-heard{
-        display: flex;
-        gap:60px;
 
-        .views-field-link-flag{
+      .link-heard {
+        display: flex;
+        gap: 60px;
+
+        //LINKS
+        .social-media-links--platforms {
+          li a span {
+            color: #FFFFFF;
+            background-color: #0a6fb4;
+            font-size: 20px;
+            width: 28px;
+            height: 28px;
+            padding-top: 4px;
+          }
+        }
+
+
+        //like
+        .views-field-link-flag {
           padding-top: 8px;
-          .fa-heart-o{
-            &:before{
+
+          .fa-heart-o {
+            &:before {
               font-size: 18px;
               text-align: center;
             }
           }
-          .fa-heart{
-            &:before{
+
+          .fa-heart {
+            &:before {
               font-size: 18px;
               text-align: center;
               color: #0a6fb4;
             }
           }
-          .action-flag{
-            a{
-              color: rgba(0,0,0,0);
+
+          .action-flag {
+            a {
+              color: rgba(0, 0, 0, 0);
             }
           }
-          .action-unflag{
-            a{color: transparent;}
+
+          .action-unflag {
+            a {
+              color: transparent;
+            }
 
 
           }

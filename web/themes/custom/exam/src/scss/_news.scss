@@ -5,15 +5,32 @@
     margin-top: 30px;
   }
 
+  //SEARCH
+  .view-filters{
+    .form-inline{
+      @media(max-width: 767px){
+        display: flex;
+      }
+      .form-item-field-title-news-value{
+        padding-left: 15px;
+        @media (max-width: 1250px){
+          padding-left: 15%;
+        }
+        @media (max-width: 700px){
+          padding-left: 4%;
+        }
+        @media (max-width: 370px){
+          width: 70%;
+        }
+      }
+    }
+  }
+
   .views-row {
     gap: 15px;
     @media (max-width: 1250px) {
       flex-direction: column;
-
     }
-
-
-
     .views-col {
       display: grid;
       grid-template-areas:
@@ -24,16 +41,44 @@
       grid-gap: 5px;
       background-color: #FFFFFF;
       padding: 5px;
+
+      @media (max-width: 500px) {
+        grid-template-areas:
+    'image image writer  news'
+    'image image  job ago'
+    'title title title title'
+    'text text text text '
+    'btn btn btn btn';
+
+      }
       &.col-1 {
         position: relative;
+        @media (max-width: 1250px){
+          width: 70% !important;
+        }
+        @media (max-width: 700px){
+          width: 92% !important;
+        }
       }
 
       &.col-2 {
         position: relative;
+        @media (max-width: 1250px){
+          width: 70% !important;
+        }
+        @media (max-width: 700px){
+          width: 92% !important;
+        }
       }
 
       &::after {
         @include line(1px, 60%, #cccccc, 35%, 14.2%);
+        @media (max-width: 1250px){
+          @include line(1px, 60%, #cccccc, 35%, 87px);
+        }
+        @media (max-width: 500px){
+          display: none;
+        }
 
       }
 
@@ -67,6 +112,7 @@
       .views-field-field-writer {
         grid-area: writer;
         color: #cccccc;
+
       }
 
       .views-field-new-comments {
@@ -96,6 +142,9 @@
         margin-bottom: 20px;
         padding-top: 15px;
         padding-inline: 20px;
+        @media (max-width: 500px){
+          padding-inline: 0;
+        }
       }
 
       .views-field-field-text-news {
@@ -106,10 +155,16 @@
         letter-spacing: -1.4px;
         text-align: justify;
         padding-inline: 20px;
+        @media (max-width: 500px){
+          padding-inline: 0;
+        }
       }
 
       .views-field-fieldset {
         padding-inline: 10px;
+        @media (max-width: 500px){
+          padding-inline: 0;
+        }
 
         .date-news {
           .views-field-created {
@@ -118,6 +173,9 @@
               text-align: center;
             }
           }
+          @media (max-width: 500px){
+            display: none;
+          }
         }
       }
 
@@ -125,9 +183,15 @@
         grid-area: image;
         border-left: 1px solid #cccccc;;
         padding-left: 20px;
+        @media (max-width: 500px){
+          padding-left: 0;
+        }
 
         .img-responsive {
           max-width: unset;
+        }
+        @media (max-width: 500px){
+          border: none;
         }
       }
 

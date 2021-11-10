@@ -1,54 +1,99 @@
 .block-views-blockservices-block-1 {
   margin-block: 86px;
+  @media (max-width: 940px) {
+    & {
+      margin-block: 50px;
+    }
+
+  }
 
 
   .view-display-id-block_1 {
     margin-top: 86px;
-
-    //items for SERV
-    .views-col {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-inline:15px;
-
-      //image
-      .views-field-field-image-services {
+    @media (max-width: 940px) {
+      & {
+        margin-top: 50px;
 
       }
 
-      .views-field-field-tax-services {
-        padding-top: 40px;
-        a {
-          font-size: 22px;
-          line-height: 1;
-          color: #373645;
+    }
 
-          &:hover {
-            text-decoration: none;
+    .views-row {
+      flex-wrap: wrap;
+      //items for SERV
+      .views-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-inline: 15px;
+
+
+        @media (max-width: 750px) {
+          & {
+            width: 50% !important;
+            margin-bottom: 40px;
+          }
+          .views-field-field-image-services {
+            img {
+              margin: 0 auto;
+              width: 75%;
+            }
+
+          }
+        }
+
+        .views-field-field-tax-services {
+          padding-top: 40px;
+
+          .text-uppercase {
+            text-align: center;
+
+            a {
+              font-size: 22px;
+              line-height: 1;
+              color: #373645;
+              @media (max-width: 500px) {
+                font-size: 18px;
+              }
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+
+
+        }
+
+        .views-field-field-text-services {
+          font-size: 12px;
+          line-height: 1;
+          color: #cccccc;
+          text-align: center;
+          margin-top: 15px;
+
+          @media (max-width: 500px) {
+            display: none;
+
+          }
+
+
+        }
+
+        //btn
+        .views-field-view-node {
+          padding-top: 20px;
+
+          a {
+            padding-inline: 6px;
+            padding-block: 8px;
           }
         }
 
       }
-
-      .views-field-field-text-services {
-        font-size: 12px;
-        line-height: 1;
-        color: #cccccc;
-        text-align: center;
-        margin-top:15px;
-      }
-
-      //btn
-      .views-field-view-node {
-        padding-top:20px;
-        a {
-          padding-inline: 6px;
-          padding-block:8px;
-        }
-      }
-
     }
+
 
   }
 

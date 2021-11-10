@@ -4,7 +4,9 @@
 .view-display-id-block_1 {
   margin-top: 96px;
 
+
   .view-content {
+
     .views-row {
       display: flex;
       justify-content: space-between;
@@ -22,13 +24,18 @@
           font-weight: 800;
           letter-spacing: -2.3px;
           text-decoration: none;
+          @media (max-width: 500px){
+            font-size: 28px;
+            padding-left: 10px;
+          }
         }
+
 
         &::before{
           @include line (100%, 6px, #373645, -13px, 0);
         }
         &::after{
-          @include line (100%, 6px, #6e9bca, 54px, 0);
+          @include line (100%, 6px, #6e9bca, 120%, 0);
         }
       }
 
@@ -38,6 +45,23 @@
           color: #cccccc;
           font-size: 18px;
           letter-spacing: 1.1px;
+          @media (max-width: 570px){
+            font-size: 14px;
+            letter-spacing: 0.1px;
+            padding-inline: 10px;
+            text-align: justify;
+          }
+          @media (max-width: 445px){
+          text-overflow: ellipsis;
+          overflow: hidden;
+          width: 130px;
+          height: 1.2em;
+          white-space: nowrap;
+            padding-inline: 0;
+          }
+          @media (max-width: 358px){
+            display: none;
+          }
         }
       }
 
@@ -53,6 +77,9 @@
             padding: 5px;
             line-height: 1em;
           }
+        }
+        @media (max-width: 358px){
+          padding-right: 10px;
         }
       }
 

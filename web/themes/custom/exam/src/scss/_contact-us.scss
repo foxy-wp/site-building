@@ -32,6 +32,9 @@ $height-webform: 50px;
     gap: 15px;
     justify-content: center;
     margin-top: 45px;
+    @media (max-width: 600px){
+      padding-inline: 30px;
+    }
 
     .form-item-name {
       input {
@@ -92,6 +95,12 @@ $height-webform: 50px;
         iframe {
           width: 200%;
           height: 300px;
+          @media (max-width: 1450px){
+            width: 150%;
+          }
+          @media (max-width: 1160px){
+            width: 100%;
+          }
         }
       }
     }
