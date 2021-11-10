@@ -6714,8 +6714,16 @@ body {
   min-height: 100%;
 }
 
-.dialog-off-canvas-main-canvas .js-quickedit-main-content {
-  padding-bottom: 115px;
+.dialog-off-canvas-main-canvas .main-container {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.dialog-off-canvas-main-canvas .footer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .container-fluid {
